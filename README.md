@@ -1,3 +1,17 @@
+<>Hello world</>
+
+Project approach and teck stack:
+
+Tech stack: React, CSS
+
+Approach:
+1. Have checked the starbucks home page and started the development. 
+2. For header, footer and the home pages sections, I have created separate components.
+3. I have started developemnt with Header then home page sections and at the end I have created the footer.
+
+Thanks :)
+ 
+----------------------------------------------------------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
