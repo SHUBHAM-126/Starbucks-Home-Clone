@@ -1,0 +1,110 @@
+/*Light*/
+.img_txt_light, .img_txt_dark{
+    margin: 40px auto;
+    max-width: 1920px;
+    padding:0 40px;
+}
+.img_txt_light > div{
+    background-color: var(--light-color);
+}
+.img_txt_light h1{
+    font-size: 3em;
+    margin-bottom:20px;
+    color: var(--dark-color);
+}
+.img_txt_light p{
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color: var(--dark-color);
+}
+.img_txt_light button{
+    background-color: rgba(0,0,0,0);
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+    font-size: 1.2em;
+}
+
+.img_txt_light h3{
+    font-size:2em;
+    color:var(--dark-color);
+    margin-bottom: 20px;
+}
+.img_txt_light ul{
+    margin-top:0;
+    margin-bottom: 0;
+    margin-bottom: 25px;
+    line-height: 1.6em;
+    color:var(--dark-color);
+    font-size: 1.1em;
+    padding-left: 1.2rem;
+}
+.img_txt_light ul li{
+    margin-bottom: 5px;
+}
+
+/*Dark*/
+.img_txt_dark > div{ background-color: var(--primary-color); }
+.img_txt_dark h1, .img_txt_dark p{
+    color: #fff;
+}
+.img_txt_dark h1 {font-size: 3em; margin-bottom: 20px;}
+.img_txt_dark p { font-size: 1.3em; margin-bottom: 30px; }
+.img_txt_dark button{
+    color: #fff;
+    border:1px solid #fff;
+    background-color: rgba(0,0,0,0);
+    font-size: 1.2em;
+}
+
+/*Image position left*/
+.img_left{
+    display: flex;
+    align-items: center;
+}
+.img_left img, .img_right img{
+    width: 50%;
+}
+.img_left > div , .img_right > div{
+    width: 50%;
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*Text alignment left*/
+.text_align_left{
+    align-items: flex-start!important;
+    text-align: left!important;
+}
+.text_align_left p{
+    font-size:1.1em;
+}
+
+/*Image right*/
+.img_right{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+/*Mobile*/
+@media (max-width:767px){
+    .img_txt_light, .img_txt_dark{
+        padding:0;
+    }
+    .img_left, .img_right{
+        flex-direction: column;
+    }
+    .img_left img, .img_left > div, .img_right img, .img_right > div{ width: 100%; }
+    .img_left > div, .img_right > div { padding:40px 20px; }
+
+    .img_txt_light h1, .img_txt_dark h1{
+        font-size: 2em;
+    }
+    .img_txt_light p, .img_txt_light button, .img_txt_dark p, .img_txt_dark button, .img_txt_light ul{
+        font-size: 1em;
+    }
+    .img_txt_light h3{ font-size:1.5em }
+}

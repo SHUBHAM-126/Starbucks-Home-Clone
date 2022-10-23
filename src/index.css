@@ -1,13 +1,51 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600&display=swap');
+
+:root{
+  --primary-color: #006241;
+  --light-color: #d4e9e2;
+  --dark-color: #1e3932;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  margin:0;
+}
+
+p , h1, h2, h3, h4, h5, h6{
+  margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  line-height: 1.2em;
+}
+
+p, li{
+  line-height: 1.5em;
+}
+
+*{
+  font-family: 'Public Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1920px;
+  margin:auto;
+}
+
+a{
+  color:#000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .9em;
+}
+a:hover{
+  color:var(--primary-color)
+}
+
+button{
+  padding:8px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: .9em;
+  cursor: pointer;
 }
